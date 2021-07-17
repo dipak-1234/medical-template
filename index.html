@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Front end test project</title>
+  </head>
+  <body onload="myLoadFunction()">
+    <div class="main_loading" id="preLoader">
+      <div class="center_loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mx-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Treatments
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Hospitals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Request A Quote</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg" style="background-image: url('./images/hospital.jpg')">
+      <div class="container">
+        <div class="row d-flex justify-content-around align-items-center">
+          <div class="col-12 col-md-6 col-sm-12 text-white">
+            <h1>Total Knee Replacement</h1>
+            <p>
+              Total Knee Replacement is a surgery to remove and replace the
+              whole damaged knee joint with an artificial joint
+            </p>
+            <button class="btn btn-primary">Enquire Now</button>
+          </div>
+          <div class="col-12 col-md-5 col-sm-12">
+            <img src="./images/hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrollspy" data-spy="scroll" data-target=".navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container navScroll">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Overview"
+                  >Overview</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Eligibility">Eligibility</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Preparation">Preparation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutTreatment">About Treatment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Post-Treatment"
+                  >Post-Treatment Care</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#RecoveryTips">Recovery Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQs">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PatientStories">Patient Stories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container container-sm overview my-5" id="Overview">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1>Treatment Overview</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            a praesentium numquam maxime soluta accusantium ipsa cum architecto,
+            molestiae assumenda dolore vel exercitationem obcaecati modi nemo
+            eveniet neque aspernatur blanditiis. Accusantium eum porro
+            blanditiis, perspiciatis expedita dignissimos fuga beatae libero
+            aperiam amet, nihil tenetur rem corporis? Nihil culpa modi
+            voluptatem atque sint cumque, error dolorem quia deserunt qui at
+            distinctio. Ab placeat tempore, iure sed itaque ad accusantium enim
+            quae earum aperiam adipisci facilis ducimus facere consequatur ipsum
+            asperiores nostrum voluptates repudiandae laudantium at harum
+            dolore, assumenda sit tenetur. Nisi. Doloremque voluptas veniam
+            voluptatum maxime sed vero iusto quibusdam ratione reprehenderit
+            rerum! Adipisci blanditiis, aspernatur libero, eaque consequuntur
+            quisquam rem accusantium placeat culpa ab, cumque facere iure
+            laudantium repudiandae harum?
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            class="float-lg-end overviewImg"
+            src="./images/overview.jfif"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="w-75 mx-auto text-primary" />
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-7" id="Eligibility">
+          <h1>Eligibility For Treatment.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            nam delectus ab dolorum deleniti obcaecati placeat rerum ad adipisci
+            beatae atque provident error, ipsum ea impedit. Dignissimos voluptas
+            numquam illum? Dicta maxime blanditiis ut eius? Dolorum fugiat
+            perferendis dicta totam reiciendis illo quod veritatis tempore
+            nihil! Amet impedit quasi modi facilis necessitatibus quo officia.
+            Doloremque voluptates itaque aspernatur ipsum. Dolor!
+          </p>
+          <p>In general, gastric bypass could be a good option if.</p>
+          <ul>
+            <li>The BMI(body mass index) is 40 or more.</li>
+            <li>
+              Your BMI is 30 or more with severe weight-related health
+              conditions like type-2 diabetes and high blood pressure.
+            </li>
+            <li>You are willing to make permanent changes in the lifestyle.</li>
+          </ul>
+          <hr class="w-100 mx-auto text-primary mt-5" />
+          <div class="col-12 col-md-12 mt-5" id="Preparation">
+            <h1>Preparation Before Treatment.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              nam delectus ab dolorum deleniti obcaecati placeat rerum ad
+              adipisci beatae atque provident error, ipsum ea impedit.
+              Dignissimos voluptas numquam illum? Dicta maxime blanditiis ut
+              eius? Dolorum fugiat perferendis dicta totam reiciendis illo quod
+              veritatis tempore nihil! Amet impedit quasi modi facilis
+              necessitatibus quo officia. Doloremque voluptates itaque
+              aspernatur ipsum. Dolor!
+            </p>
+            <p>In general, gastric bypass could be a good option if.</p>
+            <ul>
+              <li>The BMI(body mass index) is 40 or more.</li>
+              <li>
+                Your BMI is 30 or more with severe weight-related health
+                conditions like type-2 diabetes and high blood pressure.
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle.
+              </li>
+            </ul>
+            <hr class="w-100 mx-auto text-primary mt-5" />
+          </div>
+        </div>
+        <div class="col-12 col-md-5" id="sidebar">
+          <div class="card float-lg-end p-4 shadow" style="max-width: 24em">
+            <h1 class="fst-italic text-primary">Need Help?</h1>
+            <p>Just let us know. We will be happy to assist you.</p>
+            <div class="card-body">
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                class="form-control mt-3"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+              <input
+                type="number"
+                class="form-control mt-3"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Phone Number"
+              />
+              <textarea
+                class="form-control mt-3"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Describe your Treatment Requirement"
+              ></textarea>
+              <a href="#" class="btn btn-primary mt-4 w-100">Send Enquiry</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5" id="AboutTreatment">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <h1>About Treatment.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam nam delectus ab dolorum deleniti obcaecati placeat
+                rerum ad adipisci beatae atque provident error, ipsum ea
+                impedit. Dignissimos voluptas numquam illum? Dicta maxime
+                blanditiis ut eius? Dolorum fugiat perferendis dicta totam
+                reiciendis illo quod veritatis tempore nihil! Amet impedit quasi
+                modi facilis necessitatibus quo officia. Doloremque voluptates
+                itaque aspernatur ipsum. Dolor!
+              </p>
+              <p>In general, gastric bypass could be a good option if.</p>
+              <ul>
+                <li>The BMI(body mass index) is 40 or more.</li>
+                <li>
+                  Your BMI is 30 or more with severe weight-related health
+                  conditions like type-2 diabetes and high blood pressure.
+                </li>
+                <li>
+                  You are willing to make permanent changes in the lifestyle.
+                </li>
+              </ul>
+              <hr class="w-100 mx-auto text-primary mt-5" />
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5" id="Post-Treatment">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <h1>Post-Treatment Care Treatment.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam nam delectus ab dolorum deleniti obcaecati placeat
+                rerum ad adipisci beatae atque provident error, ipsum ea
+                impedit. Dignissimos voluptas numquam illum? Dicta maxime
+                blanditiis ut eius? Dolorum fugiat perferendis dicta totam
+                reiciendis illo quod veritatis tempore nihil! Amet impedit quasi
+                modi facilis necessitatibus quo officia. Doloremque voluptates
+                itaque aspernatur ipsum. Dolor!
+              </p>
+              <p>In general, gastric bypass could be a good option if.</p>
+              <ul>
+                <li>The BMI(body mass index) is 40 or more.</li>
+                <li>
+                  Your BMI is 30 or more with severe weight-related health
+                  conditions like type-2 diabetes and high blood pressure.
+                </li>
+                <li>
+                  You are willing to make permanent changes in the lifestyle.
+                </li>
+              </ul>
+              <hr class="w-100 mx-auto text-primary mt-5" />
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5" id="RecoveryTips">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <h1>Treatment Recovery Tips.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam nam delectus ab dolorum deleniti obcaecati placeat
+                rerum ad adipisci beatae atque provident error, ipsum ea
+                impedit. Dignissimos voluptas numquam illum? Dicta maxime
+                blanditiis ut eius? Dolorum fugiat perferendis dicta totam
+                reiciendis illo quod veritatis tempore nihil! Amet impedit quasi
+                modi facilis necessitatibus quo officia. Doloremque voluptates
+                itaque aspernatur ipsum. Dolor!
+              </p>
+              <p>In general, gastric bypass could be a good option if.</p>
+              <ul>
+                <li>The BMI(body mass index) is 40 or more.</li>
+                <li>
+                  Your BMI is 30 or more with severe weight-related health
+                  conditions like type-2 diabetes and high blood pressure.
+                </li>
+                <li>
+                  You are willing to make permanent changes in the lifestyle.
+                </li>
+              </ul>
+              <hr class="w-100 mx-auto text-primary mt-5" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5" id="FAQs">
+          <div class="row">
+            <div class="col-12 col-md-7 col-sm-12">
+              <h1>Treatment FAQs.</h1>
+              <button class="accordion">
+                How do I know the clinic I am searching is verified?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                I can't travel alone so can some family member or friend of mine
+                accompany me?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                Can I see my doctor before I decide and what about my post
+                recovery?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                How do I share my reports and medical cases with the clinic of
+                my choice?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <hr class="w-100 mx-auto text-primary mt-5" />
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5" id="PatientStories">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <h1>Patient Stories & Videos.</h1>
+              <div class="owl-carousel owl-theme" id="owl-demo">
+                <div class="card">
+                  <img
+                    data-src="./images/post.jpg"
+                    class="card-img-top lazyOwl"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Medical Care</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">View Post</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    data-src="./images/hospital1.jpg"
+                    class="card-img-top lazyOwl"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Hospital Staff</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">View Post</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    data-src="./images/post.jpg"
+                    class="card-img-top lazyOwl"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Medical Care</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">View Post</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    data-src="./images/hospital1.jpg"
+                    class="card-img-top lazyOwl"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Hospital Staff</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">View Post</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doctors py-5" id="doctor">
+      <div class="container">
+        <h2 class="text-center text-danger">Doctors</h2>
+        <h1 class="text-center">
+          Top Orthopaedic <span class="text-primary">Doctors</span>
+        </h1>
+        <div class="carousel-slider owl-carousel">
+          <div class="card">
+            <img
+              data-src="./images/post.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/hospital1.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/overview.jfif"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/post.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/hospital1.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/overview.jfif"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center text-danger">
+                Dr. Faique Falke
+              </h5>
+              <h4 class="fw-bold text-center fs-5">
+                Musaffah Industrial - Abu Dhabi
+              </h4>
+              <p class="card-text text-center">Doctor Degree & Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5">
+      <div class="container">
+        <h2 class="text-center text-danger">Hospitals</h2>
+        <h1 class="text-center">
+          Recommended <span class="text-primary">Hospitals</span>
+        </h1>
+        <div class="carousel-owl owl-carousel owl-theme">
+          <div class="card">
+            <img
+              data-src="./images/apollo-bangelore.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Apollo Hospital</h5>
+              <p class="card-text text-center text-danger">Bangalore</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/medanta.webp"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Medanta Hospital</h5>
+              <p class="card-text text-center text-danger">Gurgaon</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/jaslok.jfif"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Jaslok Hospital</h5>
+              <p class="card-text text-center text-danger">Mumbai</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/apollo-bangelore.jpg"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Apollo Hospital</h5>
+              <p class="card-text text-center text-danger">Bangalore</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/medanta.webp"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Medanta Hospital</h5>
+              <p class="card-text text-center text-danger">Gurgaon</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              data-src="./images/jaslok.jfif"
+              class="card-img-top lazyOwl"
+              alt="..."
+            />
+            <div class="card-body my-3">
+              <h5 class="card-title text-center">Jaslok Hospital</h5>
+              <p class="card-text text-center text-danger">Mumbai</p>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-center mt-5">
+          Don't hesitate, contact us for better help and services.
+          <a class="link-danger" href="">Explore all Hospitals</a>
+        </h4>
+      </div>
+    </div>
+    <div
+      class="bgCall container-fluid py-5"
+      style="background-image: url('./images/hospital.jpg')"
+    >
+      <h3 class="text-center">Stay healthy and strong to enjoy life</h3>
+      <h1 class="text-center">We have team of healthcare experts</h1>
+      <div class="text-center">
+        <div>
+          <a class="btn btn-primary" href="">Get in Touch</a>
+          <h4 class="pt-3">+91 898 777 9999</h4>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <h5 class="text-white">Important Links</h5>
+            <ul>
+              <li class="text-white py-1">
+                <a>Home</a>
+              </li>
+              <li class="text-white py-1">
+                <a>About Us</a>
+              </li>
+              <li class="text-white py-1">
+                <a>FAQs</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Blog</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h5 class="text-white">Top Hospitals</h5>
+            <ul>
+              <li class="text-white py-1">
+                <a>Apollo Hospital Delhi</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Medanta Hospital Gurgaon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Max Hospital Delhi</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Jaslok Hospital Mumbai</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Artemis Hospital Gurgaon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Fortis Hospital Gurgaon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>View All</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h5 class="text-white">Speciality Treatments</h5>
+            <ul>
+              <li class="text-white py-1">
+                <a>Knee Replacement Surgeon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Urologist</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Spine Surgeon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>ENT Surgeon</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Orthopaedic</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Cardiologist</a>
+              </li>
+              <li class="text-white py-1">
+                <a>View All</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h5 class="text-white">Medical Tourism Destinations</h5>
+            <ul>
+              <li class="text-white py-1">
+                <a>Medical Tourism in India</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Medical Tourism in Sri Lanka</a>
+              </li>
+              <li class="text-white py-1">
+                <a>Medical Tourism in UAE</a>
+              </li>
+              <li class="text-white py-1">
+                <a>View All</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-100 mt-4 text-white" />
+        <div class="footLogo mt-5">
+          <div class="row">
+            <div class="col-md-3 me-5 col-sm-12">
+              <img src="./images/aafia-logo.png" alt="" />
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <h2 class="text-white">About Aafiya Mediretreats</h2>
+              <p class="text-white">
+                Aafiya Mediretreats is a free, confidential, independent
+                resource for patients and industry providers. Our mission is to
+                provide a central portal where patients, Medical Tourism
+                providers, hospitals, clinics, employers and insurance companies
+                can all find the information they need. Our site focuses on
+                patients looking for specific knowledge in the fields of medical
+                tourism, dental tourism and health tourism.
+              </p>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <h4 class="text-white pt-3">Follow Us On</h4>
+              <div class="row social">
+                <div class="col-md-12 col-sm-12">
+                  <i
+                    style="color: #4267b2"
+                    class="fs-2 fab fa-facebook-square"
+                  ></i>
+                  <i
+                    style="color: #1da1f2"
+                    class="fs-2 fab fa-twitter-square"
+                  ></i>
+                  <i style="color: #8a3ab9" class="fs-2 fab fa-instagram"></i>
+                  <i
+                    style="color: #ff0000"
+                    class="fs-2 fab fa-youtube-square"
+                  ></i>
+                </div>
+              </div>
+              <h5 class="text-white pt-4">Customer Service</h5>
+              <p class="text-info fs-5">+91 9856555666</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #1da1f2">
+        <div class="container container-sm footer-end pt-3">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <p class="text-white">
+                Copyright &copy; 2020 Aafiya Mediretreats. All Rights Reserved.
+                Designed by Ideamagix.
+              </p>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <a class="text-white">Terms and Conditions</a>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <a class="text-white">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./owl-carousel/owl.carousel.js"></script>
+    <script src="./js/jquery.js"></script>
+  </body>
+</html>
